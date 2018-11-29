@@ -22,7 +22,7 @@ while temps==-1:
 				setText(" Veuillez choisir un type de bouteille")
 				while testbouton==0:
 					if grovepi.digitalRead(button):
-						setText(" Et merce")
+						setText(" Lancement Process")
 						testbouton=1
 						time.sleep(5)
 	except TypeError:
