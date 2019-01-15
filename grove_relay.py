@@ -35,7 +35,7 @@ THE SOFTWARE.
 # NOTE: Relay is normally open. LED will illuminate when closed and you will hear a definitive click sound
 import time
 import grovepi
-
+import os
 # Connect the Grove Relay to digital port D4
 # SIG,NC,VCC,GND
 relay = 2
@@ -48,16 +48,16 @@ while True:
 	tmp=input("Actionner n secondes : ")
         # switch on for 5 seconds
         grovepi.digitalWrite(relay,1)
-	grovepi.digitalWrite(relay2,1)
+	grovepi.digitalWrite(relay2,0)
         print (tmp)
         time.sleep(tmp)
 	grovepi.digitalWrite(relay,0)
 	time.sleep(2)
 	grovepi.digitalWrite(relay,1)
         # switch off for 5 seconds
-        grovepi.digitalWrite(relay2,0)
+        grovepi.digitalWrite(relay2,1)
         print ("retracter")
-        time.sleep(tmp)
+        time.sleep(10)
 	grovepi.digitalWrite(relay,0)
 	tmp=0
     except KeyboardInterrupt:

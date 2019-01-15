@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "decapsuleur-fas-ig3",
+  "private_key_id": "46982bd92f59abb333d4375e54b2c05f43b1bad9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC0nKtfyr+9joEk\nwySIBAcYSRJGcO7sKItJ4sgS4i5zpgkAZ2YHwEljHma3uZO/ib2mXMrjeW7eGgZh\nsHPQRfsus6qBgwlGgQdBlVU7WsxjSGzRxbeh2xSNGZR5UqA9I5JzBb89n+7QXD4S\n2bdIgc2MWfm7yffTYX1eqWBhSkgc4xmbs2PPdFSVJANkZZ+kFZaGK3ZD+aNzcPnA\nmXQqJrlhmcl5u0biiZEiyXTLJbLJQuy64ouMJQKvQ/ItBXmBfJCsFgdIsalpaAPE\nt+cXGqXkdI6+E8lcoEPGMVybNbsGwvocv4JuCEpa8/4F1UoLqdu56MAFQm4RdNpx\nbBtgTYRZAgMBAAECggEAHPPqgwIjp5WdvTttHULBXRLFqQt3OYisVNf+aQyKFBmf\nOB8whiM8gHUB/rId7bv9GMX885HmrxhZQorAng1sh97fAUD0w9vGQoICYO/xc3mg\n5tB9BfzH4sX20lYSVYq2HNXkg31NEWi1aLHZsE1imn0H9s3DJRxr4Q4M4xEUgKYK\n1yK07hqWq8iNpa0nlN4ffYPaVoMrzo0RjtzJ68/8Tj60vKabVuT0G8Mrr7C1QaC7\n0tZz+J4/acrSJD8o04b+xmiED2mQ5lbZyDYRenMYdzdYeuLsMMUiI5fHBsL8/EfC\nn97JdhcEEJa5k/cTtvhan9ZiLHOA/7EqrQ1OjpNyKwKBgQDgVGy5zMxhgM31kv0u\nUkhrZVQE8OTjZdPoPp0l9LjAaEk1QSd2lma5BpN9m52zOHCN+WGS+HMiueq3aVu9\nkid3py5iHIQpWxS/fM8of4rJ9IE/OXXvTRfcIkY8TDWTH3UTdk5sjY0OndYgLXN6\nxlGrcTBLk+ZfCBr/skz4rtD5jwKBgQDOHDnM8hgIbram9Bd5wyZMwIAtrP4Wvz0h\nl4i+hyCvMifRGjgrBXWbqFIZWBO/KZ4tI1UMoSw8K/2ng7H+Lmhioq5MGWdUI9sb\nqK4MAcLvb5I8/TSHp0whVKtnCszHftTF20fT0NWAszVUDhikYQc701OFTAIWW7Rr\nUCgqQQ4flwKBgDNg4q4DS+Qg/gr6qWYMjm2afY3MJoA2eDw+6vsge5gFyo6Z55Hv\njINgEDO6innbuVuq/EAPCz+u2SU8yjg22zc6YRMzeMmIBM5+pWufGoh6qYdzf6FZ\nRNe0OeXhhnu1vrjAZeHS4bWxTLN99W7vMRFVETyeGSs2zgg2LA7g6xfdAoGAHr63\nIIs8aoWZWW4v0kn5/Jj6hdW4UUxVoh0omMMvbPLeXaK7ni9CS+Xf2Uf6KhnbLoCG\nv0uLfa5SOBq9Al2J1KzPsypW74YpuQaAb+oTWgQanF5o55NdF9u5dbV2touE0b7U\nCBSuxHP3EILJyjtvCM2NN+UOqqcjUp6yXxs1MCECgYEAlmywGUt3HKKAmAnRIft1\nA3TXv8YUrR2Lki+SDiDeS4tNVUqogeOTnH2Y6Syp/O2HtQ/nEiJTNi0hZPaV0fas\nIhT3HmUFs0x+J9ltto5WNg/QDsMvQMybeOUrAJQjlQmvN987qgqrTznrevapKRoX\nARTaT/X6IAqhl4SoNlQMvjI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "fasodecapig3@decapsuleur-fas-ig3.iam.gserviceaccount.com",
+  "client_id": "105257229088606911311",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/fasodecapig3%40decapsuleur-fas-ig3.iam.gserviceaccount.com"
+}

@@ -21,7 +21,6 @@ def setRGB(rouge,vert,bleu):
         bus.write_byte_data(DISPLAY_RGB_ADDR,0x03,vert) # <--- ?
         bus.write_byte_data(DISPLAY_RGB_ADDR,0x02,bleu) # <--- ?
         bus.write_byte_data(DISPLAY_RGB_ADDR,0x08,0xAA)
-        print("Couleur écran changée")
 
 
 def setColor(color):
@@ -50,6 +49,12 @@ def textCmd(cmd):
 def textCmd2(cmd):
     bus.write_byte_data(DISPLAY_TEXT_ADDR,0x40,cmd)
 
+def clearEcran():
+	textCmd(0x01)
+	textCmd(0x0F)
+	textCmd(0x38)
+	setRGB(0x00,0x00,0x00)
+   
 # Completez le code de la fonction permettant d'ecrire le texte recu en parametre
 # Si le texte contient un \n ou plus de 16 caracteres pensez a gerer
 # le retour a la ligne
@@ -91,8 +96,4 @@ def setText(texte):
                	 	i=i+1
 			j=j+1
 	
-
-
-
-setColor("bleu")
 
