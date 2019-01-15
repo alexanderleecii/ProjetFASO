@@ -1,4 +1,0 @@
-https://github.com/Seeed-Studio/Digital_Infrared_Temperature_Sensor_MLX90615 (Exemple utilisation capteur IR1)
-https://github.com/selat/stm32-smbus/blob/master/main.c (Exemple utilisation capteur IR1)
-https://www.blaess.fr/christophe/files/Communiquer-en-i2c-avec-un-capteur-de-temp%C3%A9rature.pdf (Exemple com bus i2c)
-https://raw.githubusercontent.com/SeeedDocument/Grove-Digital_Infrared_Temperature_Sensor/master/res/MLX90615.pdf (doc capteur i2c)
