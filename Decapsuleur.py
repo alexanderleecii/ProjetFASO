@@ -2,7 +2,6 @@
 #------------- Importation des différentes librairies -------------#
 from __future__ import print_function
 from driverI2C import *
-import grovepi2
 import grovepi
 import time
 from Projet import *
@@ -16,14 +15,15 @@ from decimal import Decimal
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
+time.sleep(15)
 #------------- Lancement du script qui allume l'écran ------------- #
-os.system("sudo ./Projet.sh")
-
+os.system("sudo /home/pi/ProjetFAS/ProjetFASO/./Projet.sh")
+time.sleep(10)
 
 #------------- Connection à l'API google pour stocker les valeurs de nos décapsulages -------------#
 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
 
-credentials = ServiceAccountCredentials.from_json_keyfile_name('FASOconnexiongoogle.json',scope)
+credentials = ServiceAccountCredentials.from_json_keyfile_name('/home/pi/ProjetFAS/ProjetFASO/FASOconnexiongoogle.json',scope)
 
 gc = gspread.authorize(credentials)
 
@@ -82,7 +82,7 @@ def recevoir_temp_moyenne(Temps):
 # Est_Bouteille_Posee  -> Bool
 # La fonction Est_Bouteille_Posee verifie que la bouteille est posée sur le socle
 def Est_Bouteille_Posee():
-	if grovepi2.ultrasonicRead(ultrason)<8:
+	if grovepi.ultrasonicRead(ultrason)<8:
 		return True
 	else:
 		return False
@@ -182,9 +182,9 @@ def Retracter(Temps):
 # La fonction Decapsulage_Force demande à l'utilisateur si il veut quand même décapsuler la bouteille ( si elle n'est pas fraîche)
 def Decapsulage_Force():
 	while True:
-		if grovepi2.digitalRead(button1)==1:
+		if grovepi.digitalRead(button1)==1:
 			return True
-		if grovepi2.digitalRead(button2)==1:
+		if grovepi.digitalRead(button2)==1:
 			return False
 
 
@@ -234,8 +234,8 @@ button2 = 5
 ultrason = 4
 buzzer = 6
 relayDC = 7
-grovepi2.pinMode(button1,"INPUT")
-grovepi2.pinMode(button2,"INPUT")
+grovepi.pinMode(button1,"INPUT")
+grovepi.pinMode(button2,"INPUT")
 grovepi.pinMode(relay,"OUTPUT")
 grovepi.pinMode(relayDC,"OUTPUT")
 Temps=0
