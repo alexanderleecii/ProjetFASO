@@ -1,11 +1,9 @@
 # coding: utf-8
 #------------- Importation des différentes librairies -------------#
 from __future__ import print_function
-from driverI2C import *
 import grovepi
 import time
 from Projet import *
-import sys, signal, atexit
 from upm import pyupm_otp538u as upmOtp538u
 import mraa
 import os
@@ -101,9 +99,6 @@ def Est_Bouteille_Posee_3():
 # Get_Temperature  -> Float
 # La fonction Get_Temperature retourne la temperature de la bouteille
 def Get_Temperature():
-    	# Register exit handlers
-    	#atexit.register(exitHandler)
-    	#signal.signal(signal.SIGINT, SIGINTHandler)
         return(round(float(myTempIR.objectTemperature()),2))
 
 
