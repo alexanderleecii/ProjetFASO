@@ -169,7 +169,7 @@ def Actionner(Temps):
 	return 1
 
 
-# Actionner: Float
+# Retracter: Float
 # La fonction Retracter retracte le verin pendant n secondes
 def Retracter(Temps):
 	grovepi.digitalWrite(relayDC,0)
