@@ -241,7 +241,7 @@ grovepi.pinMode(relayDC,"OUTPUT")
 Temps=0
 
 
-#------------- COMMENTAIRE ------------- #
+# ------ Initialisation des pins 0 et 1 pour le capteur de température + déclaration de l'utilisation d'un shield à mraa ------ #
 mraa.addSubplatform(mraa.GROVEPI, "0")
 OTP538U_AREF = 5.0 # analog voltage, usually 3.3 or 5.0
 # Instantiate a OTP538U on analog pins A0 and A1
