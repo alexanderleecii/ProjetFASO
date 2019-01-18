@@ -1,6 +1,5 @@
 # coding: utf-8
 #------------- Importation des différentes librairies -------------#
-from __future__ import print_function
 import grovepi
 import time
 from Projet import *
